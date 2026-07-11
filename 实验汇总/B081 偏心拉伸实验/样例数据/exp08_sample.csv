@@ -1,0 +1,5 @@
+run,F0_kN,Fmax_kN,delta_F_kN,epsilon_max_micro,full_bridge_reading_micro,half_bridge_M1_reading_micro,half_bridge_M2_reading_micro,epsilon_F_micro,epsilon_M1_micro,epsilon_M2_micro,epsilon_a_micro,epsilon_b_micro,epsilon_1_micro,epsilon_2_micro,E_MPa,h_mm,b_mm,A_mm2,Wz_mm3,Wy_mm3
+1,2,12,10,821,506,1136,,,,,,,,,,24,8,,,
+2,2,12,10,823,504,1140,,,,,,,,,,24,8,,,
+3,2,12,10,819,507,1134,,,,,,,,,,24,8,,,
+4,2,12,10,822,505,1138,,,,,,,,,,24,8,,,

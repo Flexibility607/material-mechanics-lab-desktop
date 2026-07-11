@@ -1,0 +1,7 @@
+group,material,d0_mm,d1_mm,l0_mm,l1_mm,Fp_N,Fs_N,Fb_N,h0_mm,Ts_Nmm,Tb_Nmm,observation
+tension,low_carbon_steel,10,6.6,100,126,18000,24000,36000,,,,线性、屈服、强化、缩颈，杯状断口
+tension,cast_iron,10,,100,,,,16000,,,,变形小，无屈服和缩颈，断口近垂直轴线
+compression,low_carbon_steel,15,,,,,56000,,30,,,明显屈服，越压越扁，呈腰鼓形
+compression,cast_iron,15,,,,,,145000,30,,,无明显屈服，断口与轴线约成55度
+torsion,low_carbon_steel,10,,50,,,,,,95000,155000,先线性后屈服，最终沿垂直轴线截面剪断
+torsion,cast_iron,10,,50,,,,,,,72000,变形小，沿约45度螺旋面断裂

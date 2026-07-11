@@ -1,0 +1,17 @@
+case,point,x_mm,deflection_mm,P_N,l_mm,b_mm,h_mm,E_MPa,theta_delta_mm,theta_a_mm,theta_exp_rad,delta12_mm,delta21_mm,P1_N,P2_N,epsilon_max1_micro,epsilon_max2_micro,l12_mm,Wz_mm3,m0_kg,epsilon_max_x_micro,epsilon_max_0_micro,demo_item,light_field,fringe_order,material_fringe_value_N_per_mm,thickness_mm,stress_MPa,stress_ratio,cycle_count,runout,observation,expected,fracture_feature,notes
+deflection,O,0,0,29.4,600,20,5,210000
+deflection,A,100,-1.42,29.4,600,20,5,210000
+deflection,B,200,-2.58,29.4,600,20,5,210000
+deflection,C,300,-3.01,29.4,600,20,5,210000
+deflection,D,400,-2.55,29.4,600,20,5,210000
+deflection,E,500,-1.40,29.4,600,20,5,210000
+deflection,F,600,0,29.4,600,20,5,210000
+slope,left_support,,,29.4,600,20,5,210000,-1.50,100
+reciprocity,point_1_2,,,,,,,,,,,0.86,0.85,29.4,29.4
+cantilever_method1,unknown_mass,,,,,,,210000,,,,,,,,120,148,120,80
+cantilever_method2,unknown_mass_ratio,,,,,,,,,,,,,,,,,,,0.2,410,205
+photoelastic,,,,,,,,,,,,,,,,,,,,,,,pure_bending,circular_dark,2,6.5,5,,,,,等差线近似平行且关于中性层对称,纯弯梁等差线反映弯曲正应力沿高度近似线性变化，中性层附近为零级条纹,,圆偏振暗场主要观察等差线
+photoelastic,,,,,,,,,,,,,,,,,,,,,,,ring_diametral_compression,circular_dark,3,6.5,5,,,,,圆环内外边缘及加载点附近条纹密集,圆环对径受压时应力分布不均并出现应力集中,,观察圆环对径受压的等差线分布
+fatigue,,,,,,,,,,,,,,,,,,,,,,,high_stress,,,,,360,-1,120000,no,试样在较少循环后断裂,应力水平较高时疲劳寿命较短,裂纹源、扩展区和瞬断区较清楚,
+fatigue,,,,,,,,,,,,,,,,,,,,,,,low_stress,,,,,260,-1,850000,no,循环次数明显增加后断裂,应力降低时疲劳寿命增加,扩展区面积较大,
+fatigue,,,,,,,,,,,,,,,,,,,,,,,runout,,,,,220,-1,1000000,yes,达到指定循环次数仍未断裂,低于或接近疲劳极限时可能不发生破坏,,记为未断裂点

@@ -1,0 +1,96 @@
+:root {
+    color-scheme: light dark;
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    background: Canvas;
+    color: CanvasText;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    gap: 15px;
+    padding: 26px 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.intro,
+.note,
+.message {
+    margin: 0;
+    color: GrayText;
+    line-height: 1.55;
+}
+
+label {
+    display: grid;
+    gap: 7px;
+    font-size: 14px;
+}
+
+input[type="password"],
+input[type="text"],
+label > input:not([type]) {
+    height: 38px;
+    box-sizing: border-box;
+    padding: 7px 10px;
+    border: 1px solid GrayText;
+    border-radius: 7px;
+    background: Field;
+    color: FieldText;
+    font: inherit;
+}
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.status {
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: color-mix(in srgb, GrayText 12%, Canvas);
+    font-size: 13px;
+}
+
+.status[data-kind="ok"] {
+    color: #047857;
+}
+
+.status[data-kind="bad"] {
+    color: #b91c1c;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+button {
+    min-width: 96px;
+    min-height: 36px;
+    border: 1px solid GrayText;
+    border-radius: 7px;
+    background: ButtonFace;
+    color: ButtonText;
+    font: inherit;
+}
+
+button.primary {
+    border-color: #0f766e;
+    background: #0f766e;
+    color: white;
+}
+
+button:disabled {
+    opacity: 0.55;
+}

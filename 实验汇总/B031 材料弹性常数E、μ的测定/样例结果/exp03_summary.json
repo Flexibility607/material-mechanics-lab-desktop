@@ -1,0 +1,73 @@
+{
+  "experiment": "材料弹性常数 E, mu 的测定",
+  "load_sequence_kN": [
+    2,
+    6,
+    10,
+    14,
+    18
+  ],
+  "area_rule": "优先使用 A0_mm2；否则按三处截面面积 A0=(A1+A2+A3)/3；再退回 b_mm*t_mm",
+  "strain_channels": "epsilon_1, epsilon_2 合成轴向应变；epsilon_3, epsilon_4 合成横向应变",
+  "selection_rule": "选择 sigma-epsilon_F 线性拟合 R^2 高且 E_i 离散系数低的一组",
+  "selected_run": "1",
+  "mean_E_MPa": 69939.70465423231,
+  "mean_mu": 0.31543624161073824,
+  "sigma_strain_fit_E_MPa": {
+    "n": 5,
+    "slope": 69939.70465423231,
+    "intercept": -1.4210854715202004e-14,
+    "r2": 1.0
+  },
+  "sigma_strain_equation": "sigma_MPa = 69939.704654 * epsilon_F + 0.000000",
+  "hooke_law_r2_threshold": 0.99,
+  "hooke_law_verified": true,
+  "required_processing_covered": [
+    "三处截面面积平均得到 A0",
+    "四片应变片合成轴向应变和横向应变",
+    "相邻载荷级作差并逐级计算 E_i 和 mu_i",
+    "sigma-epsilon_F 拟合验证单向拉伸胡克定律",
+    "重复多遍时选择线性最好且离散性最低的一组",
+    "输出平均 E 和 mu 作为实验结论"
+  ],
+  "conclusion": "选用第 1 组数据；sigma-epsilon_F 拟合 R^2=1.000000，满足线性验证要求；最终 E=69939.7047 MPa，mu=0.315436。",
+  "all_run_quality": {
+    "1": {
+      "fit": {
+        "n": 5,
+        "slope": 69939.70465423231,
+        "intercept": -1.4210854715202004e-14,
+        "r2": 1.0
+      },
+      "mean_E_MPa": 69939.70465423231,
+      "mean_mu": 0.31543624161073824,
+      "cv_E": 0.0,
+      "score": 0.0
+    },
+    "2": {
+      "fit": {
+        "n": 5,
+        "slope": 70009.52114820265,
+        "intercept": -0.03101043166345363,
+        "r2": 0.9999905219826252
+      },
+      "mean_E_MPa": 70004.21248202484,
+      "mean_mu": 0.3153118970608708,
+      "cv_E": 0.01050568228107715,
+      "score": 0.010515160298451981
+    },
+    "3": {
+      "fit": {
+        "n": 5,
+        "slope": 69455.42313567181,
+        "intercept": 0.15242346192054868,
+        "r2": 0.9999072895049721
+      },
+      "mean_E_MPa": 69671.203245203,
+      "mean_mu": 0.3155471491669199,
+      "cv_E": 0.031487801450243644,
+      "score": 0.03158051194527155
+    }
+  },
+  "selected_rows": 4
+}

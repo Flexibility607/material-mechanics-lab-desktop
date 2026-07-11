@@ -1,0 +1,147 @@
+{
+  "experiment": "直梁弯曲实验",
+  "source_based_correction": [
+    "讲义和课件均要求在 y-epsilon 坐标系下拟合实验点并与理论结果比较",
+    "讲义实验步骤要求重复加载至少两次，课件要求对多次实验结果取平均值",
+    "讲义要求对比纯弯状态与三点弯状态，并分析剪力对正应变分布的影响",
+    "三点弯中性层 45 度应变片用于求最大切应变：gamma_max=2*epsilon_45"
+  ],
+  "averaging_rule": "按 state + point 对重复加载结果取平均值后再计算理论值、误差和拟合直线",
+  "state_fits": {
+    "pure_bending": {
+      "fit_epsilon_micro_vs_y_mm": {
+        "n": 7,
+        "slope": 7.597777777777778,
+        "intercept": 0.21428571428571427,
+        "r2": 0.999996785909427
+      },
+      "theory_epsilon_slope_micro_per_mm": 7.619047619047619,
+      "fit_slope_relative_error_pct": -0.2791666666666587,
+      "mean_abs_strain_error_pct": 0.36354166666666604,
+      "mean_abs_sigma_error_pct": 0.36354166666667687,
+      "mean_abs_transverse_to_longitudinal_ratio": 0.28158089737463554,
+      "transverse_ratio_vs_mu_error_pct": 0.5646062052269695,
+      "gamma_max": []
+    },
+    "three_point": {
+      "fit_epsilon_micro_vs_y_mm": {
+        "n": 7,
+        "slope": 7.81,
+        "intercept": 0.21428571428571427,
+        "r2": 0.9999693718656255
+      },
+      "theory_epsilon_slope_micro_per_mm": 7.619047619047619,
+      "fit_slope_relative_error_pct": 2.5062500000000005,
+      "mean_abs_strain_error_pct": 2.7687499999999994,
+      "mean_abs_sigma_error_pct": 2.7687499999999954,
+      "mean_abs_transverse_to_longitudinal_ratio": 0.2811317645507877,
+      "transverse_ratio_vs_mu_error_pct": 0.40420162528131165,
+      "gamma_max": [
+        {
+          "point": "S6",
+          "gamma_exp_micro": 123.0,
+          "gamma_theory_micro": 121.9047619047619,
+          "gamma_relative_error_pct": 0.8984375000000057
+        }
+      ]
+    }
+  },
+  "run_fits": {
+    "pure_bending__run_1": {
+      "n": 7,
+      "slope": 7.566666666666666,
+      "intercept": 0.8571428571428571,
+      "r2": 0.9999817027326137
+    },
+    "pure_bending__run_2": {
+      "n": 7,
+      "slope": 7.628888888888889,
+      "intercept": -0.42857142857142855,
+      "r2": 0.9999554314375028
+    },
+    "three_point__run_1": {
+      "n": 7,
+      "slope": 7.762222222222222,
+      "intercept": 0.42857142857142855,
+      "r2": 0.9999520321867891
+    },
+    "three_point__run_2": {
+      "n": 7,
+      "slope": 7.857777777777778,
+      "intercept": 0.0,
+      "r2": 0.999967689563889
+    }
+  },
+  "pure_vs_three_point": [
+    {
+      "point": "S2",
+      "y_mm": -25.0,
+      "epsilon_pure_micro": -189.5,
+      "epsilon_three_point_micro": -195.0,
+      "three_minus_pure_micro": -5.5
+    },
+    {
+      "point": "S3",
+      "y_mm": -20.0,
+      "epsilon_pure_micro": -152.0,
+      "epsilon_three_point_micro": -156.0,
+      "three_minus_pure_micro": -4.0
+    },
+    {
+      "point": "S4",
+      "y_mm": -10.0,
+      "epsilon_pure_micro": -75.5,
+      "epsilon_three_point_micro": -79.0,
+      "three_minus_pure_micro": -3.5
+    },
+    {
+      "point": "S5",
+      "y_mm": 0.0,
+      "epsilon_pure_micro": 0.0,
+      "epsilon_three_point_micro": 1.5,
+      "three_minus_pure_micro": 1.5
+    },
+    {
+      "point": "S7",
+      "y_mm": 10.0,
+      "epsilon_pure_micro": 76.0,
+      "epsilon_three_point_micro": 78.5,
+      "three_minus_pure_micro": 2.5
+    },
+    {
+      "point": "S8",
+      "y_mm": 20.0,
+      "epsilon_pure_micro": 152.0,
+      "epsilon_three_point_micro": 157.0,
+      "three_minus_pure_micro": 5.0
+    },
+    {
+      "point": "S9",
+      "y_mm": 25.0,
+      "epsilon_pure_micro": 190.5,
+      "epsilon_three_point_micro": 194.5,
+      "three_minus_pure_micro": 4.0
+    }
+  ],
+  "pure_vs_three_point_summary": {
+    "n": 7,
+    "mean_abs_difference_micro": 3.7142857142857144,
+    "max_abs_difference_micro": 5.5
+  },
+  "conclusion_checks": {
+    "has_repeated_average": true,
+    "has_y_epsilon_fit": true,
+    "has_theory_error_comparison": true,
+    "has_transverse_ratio_check": true,
+    "has_three_point_shear_strain": true,
+    "has_pure_three_point_comparison": true
+  },
+  "conclusions": [
+    "纯弯: y-epsilon 拟合斜率 7.598 με/mm，理论斜率 7.619 με/mm，斜率误差 -0.2792%，R^2=0.999997，平均应力相对误差 0.3635%。",
+    "纯弯: 上下表面横纵应变比平均值 0.2816，相对泊松比误差 0.5646%，可作为单向受力假设校核。",
+    "三点弯: y-epsilon 拟合斜率 7.81 με/mm，理论斜率 7.619 με/mm，斜率误差 2.506%，R^2=0.999969，平均应力相对误差 2.769%。",
+    "三点弯: 上下表面横纵应变比平均值 0.2811，相对泊松比误差 0.4042%，可作为单向受力假设校核。",
+    "三点弯: S6 最大切应变实验值 123 με，理论值 121.9 με，相对误差 0.8984%。",
+    "三点弯与纯弯同 y 测点的应变差平均绝对值 3.714 με，最大绝对值 5.5 με，用于分析剪力对正应变分布的影响。"
+  ]
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenAI API 设置</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <main>
+        <h1>OpenAI API 设置</h1>
+        <p class="intro">密钥使用 Windows 系统加密后保存在本机，只传给内置计算服务。</p>
+
+        <div id="status" class="status">正在读取配置…</div>
+
+        <label>
+            API 密钥
+            <input id="apiKey" type="password" autocomplete="off" placeholder="留空表示保留当前密钥">
+        </label>
+        <label>
+            模型
+            <input id="model" value="gpt-5-mini" autocomplete="off">
+        </label>
+        <label class="check-row">
+            <input id="clearKey" type="checkbox">
+            <span>清除已保存的 API 密钥</span>
+        </label>
+
+        <p class="note">保存后计算服务会自动重启。润色时整份报告会发送给所配置的 API；标题、数字、单位、公式、表格和图片链接仍会被锁定。</p>
+        <div class="actions">
+            <button id="cancel">取消</button>
+            <button id="save" class="primary">保存并重新连接</button>
+        </div>
+        <div id="message" class="message"></div>
+    </main>
+    <script src="settings.js"></script>
+</body>
+</html>

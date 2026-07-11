@@ -1,0 +1,42 @@
+{
+  "experiment": "电测法基本原理及贴片实验",
+  "lecture_required_checks": [
+    "筛选应变片并测量初始电阻",
+    "接线后再次测量电阻以检查焊接和连接是否异常",
+    "预加载或清零后进行 2 到 3 级等增量加载",
+    "计算各级载荷增量和应变增量",
+    "以各级应变增量是否大致相等判断贴片有效性"
+  ],
+  "increment_count": 3,
+  "increment_count_in_lecture_range": true,
+  "linear_fit_strain_micro_vs_load_N": {
+    "n": 4,
+    "slope": 0.1712,
+    "intercept": 0.09999999999999432,
+    "r2": 0.9999945410377488
+  },
+  "mean_delta_load_N": 500.0,
+  "std_delta_load_N": 0.0,
+  "load_increment_cv_pct": 0.0,
+  "mean_delta_strain_micro": 85.66666666666667,
+  "std_delta_strain_micro": 0.5773502691896257,
+  "strain_increment_cv_pct": 0.6739497305715475,
+  "max_strain_increment_deviation_pct": 0.778210116731523,
+  "resistance_check": {
+    "available_count": 1,
+    "max_abs_resistance_delta_ohm": 0.09999999999999432,
+    "max_abs_resistance_change_pct": 0.0833333333333286,
+    "purpose": "两次电阻测量用于筛选应变片并检查焊接、接线是否明显异常。"
+  },
+  "judgement_criteria": {
+    "load_increment_cv_pct_limit": 1.0,
+    "strain_increment_cv_pct_limit": 5.0,
+    "min_linear_fit_r2": 0.99,
+    "note": "讲义未给出定量容差；上述阈值作为程序化参考，最终应结合原始记录和实验现象判断。"
+  },
+  "load_equal_increment_ok": true,
+  "strain_increment_stable_ok": true,
+  "linearity_ok": true,
+  "validity_judgement": "贴片与接线有效性较好",
+  "conclusion": "载荷按等增量施加，应变增量离散较小，载荷-应变关系近似线性，可判为贴片与接线有效性较好。"
+}

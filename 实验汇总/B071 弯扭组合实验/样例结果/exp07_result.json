@@ -1,0 +1,14 @@
+{
+  "experiment": "弯扭组合试验",
+  "loading_scheme": "重复加载法：F0=500 N，Fmax=1500 N，Delta F=1000 N，重复4次；每个测点对应读数取平均后计算。",
+  "bridge_rule": "弯矩半桥显示读数为 2epsilon_0，扭矩桥路显示读数为 2gamma_xy，计算 M 和 T 前均需除以 2。",
+  "required_processing": "已覆盖讲义要求：尺寸平均、重复加载读数平均、应变花主应力与主方向、弯矩、扭矩、理论值比较和误差分析。",
+  "groups": 1,
+  "mean_abs_M_error_pct": 0.1328655195529427,
+  "mean_abs_T_error_pct": 0.2046968434550654,
+  "mean_abs_sigma_1_error_pct": 0.1573965147488684,
+  "mean_abs_sigma_2_error_pct": 0.10838203184398736,
+  "mean_abs_principal_angle_error_deg": 0.012631343871291278,
+  "mean_sigma_1_MPa": 82.64121039320553,
+  "mean_sigma_2_MPa": -10.82732150431665
+}

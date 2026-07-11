@@ -1,0 +1,17 @@
+case,point,x_mm,deflection_exp_mm,deflection_theory_mm,deflection_error_pct,I_mm4,theta_exp_rad,theta_theory_rad,theta_error_pct,P1_delta12_Nmm,P2_delta21_Nmm,reciprocity_error_pct,delta_difference_mm,delta_epsilon,unknown_force_N,unknown_mass_kg,Wz_mm3,demo_item,light_field,fringe_order,material_fringe_value_N_per_mm,thickness_mm,principal_stress_difference_MPa,observation,expected,notes,stress_MPa,stress_ratio,cycle_count,log10_cycle_count,runout,fracture_feature
+deflection,O,0,0,-0,,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+deflection,A,100,-1.42,-1.456,-2.472527473,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+deflection,B,200,-2.58,-2.576,0.1552795031,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+deflection,C,300,-3.01,-3.024,-0.462962963,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+deflection,D,400,-2.55,-2.576,-1.00931677,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+deflection,E,500,-1.4,-1.456,-3.846153846,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+deflection,F,600,0,-0,,208.3333333,,,,,,,,,,,,,,,,,,,,,,,,,,
+slope,left_support,,,,,208.3333333,-0.015,-0.01512,-0.7936507937,,,,,,,,,,,,,,,,,,,,,,,
+reciprocity,point_1_2,,,,,,,,,25.284,24.99,1.176470588,0.01,,,,,,,,,,,,,,,,,,,
+cantilever_method1,unknown_mass,,,,,,,,,,,,,2.8e-05,3.92,0.3997287555,80,,,,,,,,,,,,,,,
+cantilever_method2,unknown_mass_ratio,,,,,,,,,,,,,,,0.4,,,,,,,,,,,,,,,,
+photoelastic,,,,,,,,,,,,,,,,,,pure_bending,circular_dark,2,6.5,5,2.6,等差线近似平行且关于中性层对称,纯弯梁等差线反映弯曲正应力沿高度近似线性变化，中性层附近为零级条纹,圆偏振暗场主要观察等差线,,,,,,
+photoelastic,,,,,,,,,,,,,,,,,,ring_diametral_compression,circular_dark,3,6.5,5,3.9,圆环内外边缘及加载点附近条纹密集,圆环对径受压时应力分布不均并出现应力集中,观察圆环对径受压的等差线分布,,,,,,
+fatigue,,,,,,,,,,,,,,,,,,high_stress,,,,,,试样在较少循环后断裂,应力水平较高时疲劳寿命较短,,360,-1,120000,5.079181246,False,裂纹源、扩展区和瞬断区较清楚
+fatigue,,,,,,,,,,,,,,,,,,low_stress,,,,,,循环次数明显增加后断裂,应力降低时疲劳寿命增加,,260,-1,850000,5.929418926,False,扩展区面积较大
+fatigue,,,,,,,,,,,,,,,,,,runout,,,,,,达到指定循环次数仍未断裂,低于或接近疲劳极限时可能不发生破坏,记为未断裂点,220,-1,1000000,6,True,

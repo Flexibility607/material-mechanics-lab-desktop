@@ -1,0 +1,19 @@
+{
+  "experiment": "梁变形及光弹、疲劳演示实验",
+  "deflection_point_count": 7,
+  "deflection_point_requirement_ok": true,
+  "photoelastic_record_count": 2,
+  "photoelastic_required_items_present": true,
+  "fatigue_record_count": 3,
+  "fatigue_runout_count": 1,
+  "fatigue_min_cycle_count": 120000.0,
+  "fatigue_max_cycle_count": 1000000.0,
+  "fatigue_stress_life_trend_ok": true,
+  "max_reciprocity_delta_difference_abs_mm": 0.010000000000000009,
+  "reciprocity_delta_tolerance_ok": true,
+  "unknown_mass_method_difference_kg": 0.0002712445126521468,
+  "mean_abs_deflection_error_pct": 1.5892481109872432,
+  "mean_abs_theta_error_pct": 0.7936507936507957,
+  "mean_unknown_mass_kg": 0.39986437774367395,
+  "mean_photoelastic_stress_difference_MPa": 3.25
+}

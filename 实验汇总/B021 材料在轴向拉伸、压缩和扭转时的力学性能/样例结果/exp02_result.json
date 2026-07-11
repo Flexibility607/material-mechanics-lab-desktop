@@ -1,0 +1,24 @@
+{
+  "experiment": "材料在轴向拉伸、压缩和扭转时的力学性能",
+  "rows": 6,
+  "counts_by_group": {
+    "tension": 2,
+    "compression": 2,
+    "torsion": 2
+  },
+  "expected_coverage": [
+    "低碳钢拉伸",
+    "铸铁拉伸",
+    "低碳钢压缩",
+    "铸铁压缩",
+    "低碳钢扭转",
+    "铸铁扭转"
+  ],
+  "missing_required_items": [],
+  "coverage_complete": true,
+  "mean_tension_sigma_s_MPa": 305.577490736439,
+  "mean_compression_sigma_s_MPa": 316.8951755785294,
+  "mean_torsion_tau_s_MPa": 483.8310269993619,
+  "formula": "低碳钢拉伸: sigma=F/A0, delta=(l1-l0)/l0*100%, psi=(A0-A1)/A0*100%; 铸铁拉伸: 若记录Fb则sigma_b=Fb/A0; 压缩: sigma=F/A0; 扭转: tau=T/Wp, Wp=pi*d0^3/16",
+  "conclusion_requirement": "除定量指标外，应记录铸铁拉伸、低碳钢/铸铁压缩、低碳钢/铸铁扭转的曲线特征、变形现象、断口形态和破坏原因。"
+}

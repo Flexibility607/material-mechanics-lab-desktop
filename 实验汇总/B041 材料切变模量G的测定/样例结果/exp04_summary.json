@@ -1,0 +1,93 @@
+{
+  "experiment": "shear_modulus_G",
+  "source_model": "Lecture/PPT experiment 4: incremental torsion loading, torsion meter plus electric half-bridge, repeated runs.",
+  "selection_rule": "Choose the run with better T-phi and tau-gamma linearity and lower increment-G scatter.",
+  "selected_run": "1",
+  "selected_mean_G_torsion_MPa": 80001.19750659118,
+  "selected_mean_G_electric_MPa": 80003.93479541327,
+  "selected_fit_G_torsion_MPa": 80001.19750659118,
+  "selected_fit_G_electric_MPa": 80000.6504721698,
+  "selected_torsion_fit_T_vs_phi": {
+    "n": 5,
+    "slope": 163627066.6439407,
+    "intercept": 0.0,
+    "r2": 1.0
+  },
+  "selected_electric_fit_tau_vs_gamma": {
+    "n": 5,
+    "slope": 80000.6504721698,
+    "intercept": 1.963527367365714e-07,
+    "r2": 0.9999999799199115
+  },
+  "selected_max_tau_MPa": 19.5569594071321,
+  "selected_yield_limit_MPa": 220.0,
+  "selected_tau_to_yield_ratio": 0.08889527003241864,
+  "hooke_law_verified_by_linearity": true,
+  "elastic_range_check": true,
+  "conclusion": "The selected run verifies torsional Hooke law by linear T-phi and tau-gamma fits; torsion-meter and electric methods give consistent shear modulus G; the maximum shear stress is within the provided yield-limit check.",
+  "all_run_quality": {
+    "1": {
+      "torsion_fit_T_vs_phi": {
+        "n": 5,
+        "slope": 163627066.6439407,
+        "intercept": 0.0,
+        "r2": 1.0
+      },
+      "electric_fit_tau_vs_gamma": {
+        "n": 5,
+        "slope": 80000.6504721698,
+        "intercept": 1.963527367365714e-07,
+        "r2": 0.9999999799199115
+      },
+      "G_torsion_fit_MPa": 80001.19750659118,
+      "G_electric_fit_MPa": 80000.6504721698,
+      "mean_G_torsion_MPa": 80001.19750659118,
+      "mean_G_electric_MPa": 80003.93479541327,
+      "cv_G_torsion": 1.4851763973823939e-16,
+      "cv_G_electric": 0.0004089143324474706,
+      "score": 0.0004089344125361
+    },
+    "2": {
+      "torsion_fit_T_vs_phi": {
+        "n": 5,
+        "slope": 163403142.78711292,
+        "intercept": 205.88795991177903,
+        "r2": 0.9999931915357172
+      },
+      "electric_fit_tau_vs_gamma": {
+        "n": 5,
+        "slope": 80026.11259791252,
+        "intercept": -0.004712561528753767,
+        "r2": 0.9999908978461048
+      },
+      "G_torsion_fit_MPa": 79891.71576213444,
+      "G_electric_fit_MPa": 80026.11259791252,
+      "mean_G_torsion_MPa": 79862.83212587298,
+      "mean_G_electric_MPa": 80091.80791698495,
+      "cv_G_torsion": 0.008723328090348292,
+      "cv_G_electric": 0.009967854390529607,
+      "score": 0.018707093099055862
+    },
+    "3": {
+      "torsion_fit_T_vs_phi": {
+        "n": 5,
+        "slope": 162077530.96418908,
+        "intercept": 1746.0294826421014,
+        "r2": 0.9994781076124992
+      },
+      "electric_fit_tau_vs_gamma": {
+        "n": 5,
+        "slope": 79549.19572553357,
+        "intercept": 0.05756798590584822,
+        "r2": 0.9998073781451641
+      },
+      "G_torsion_fit_MPa": 79243.59234687105,
+      "G_electric_fit_MPa": 79549.19572553357,
+      "mean_G_torsion_MPa": 79210.34027841949,
+      "mean_G_electric_MPa": 79634.3983301607,
+      "cv_G_torsion": 0.07413794961739763,
+      "cv_G_electric": 0.047529110343958555,
+      "score": 0.12238157420369289
+    }
+  }
+}

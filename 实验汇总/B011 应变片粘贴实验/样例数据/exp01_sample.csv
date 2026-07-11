@@ -1,0 +1,5 @@
+step,load_N,strain_micro,resistance_before_ohm,resistance_after_ohm
+0,0,0,120.0,120.1
+1,500,86,,
+2,1000,171,,
+3,1500,257,,

@@ -1,0 +1,31 @@
+{
+  "experiment": "偏心拉伸实验",
+  "loading_scheme": {
+    "mean_F0_kN": 2.0,
+    "mean_Fmax_kN": 12.0,
+    "mean_delta_F_kN": 10.0,
+    "repetition_count": 4
+  },
+  "mean_epsilon_max": 0.0008212499999999999,
+  "mean_epsilon_F": 0.00025275,
+  "mean_epsilon_M1": 0.0005685,
+  "mean_epsilon_M2": null,
+  "mean_E_calc_MPa": 206067.6087677189,
+  "mean_sigma_max_MPa": 169.23368593403973,
+  "mean_eccentricity_e1_mm": 2.999038595836503,
+  "mean_eccentricity_e2_mm": null,
+  "mean_eccentricity_e_mm": 2.999038595836503,
+  "lecture_requirements_check": [
+    "按重复加载法记录 F0、Fmax、Delta F、N，并对各次结果求平均",
+    "由 1/4 桥读数或应变分量合成横截面最大正应变增量",
+    "由全桥读数或直接输入的 epsilon_F 求材料弹性模量 E",
+    "由 E 和最大正应变增量求实验段横截面最大正应力增量",
+    "由半桥弯曲应变分量求试件圆孔偏心距 e"
+  ],
+  "conclusion": {
+    "mean_E_GPa": 206.0676087677189,
+    "mean_sigma_max_MPa": 169.23368593403973,
+    "mean_eccentricity_e_mm": 2.999038595836503,
+    "note": "样例数据已覆盖讲义要求的最大正应变、弹性模量、最大正应力增量和偏心距计算。"
+  }
+}

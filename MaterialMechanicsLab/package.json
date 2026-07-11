@@ -1,0 +1,58 @@
+{
+  "name": "material-mechanics-lab",
+  "version": "1.0.0",
+  "description": "材料力学七次实验报告自动生成与导出应用",
+  "main": "desktop/main.js",
+  "author": "Material Mechanics Lab",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis --x64"
+  },
+  "devDependencies": {
+    "electron": "43.1.0",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "cn.materialmechanics.lab",
+    "productName": "材料力学实验报告助手",
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "desktop/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "server-dist/material_mechanics_server",
+        "to": "server",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "MaterialMechanicsLab-Setup.exe"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "packElevateHelper": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "材料力学实验报告助手",
+      "deleteAppDataOnUninstall": false
+    }
+  }
+}

@@ -1,0 +1,5 @@
+row,step,load_N,strain_micro,resistance_before_ohm,resistance_after_ohm,delta_load_N,delta_strain_micro,increment_slope_micro_per_N,resistance_delta_ohm,resistance_change_pct
+1,0,0,0,120,120.1,,,,0.1,0.08333333333
+2,1,500,86,,,500,86,0.172,,
+3,2,1000,171,,,500,85,0.17,,
+4,3,1500,257,,,500,86,0.172,,
