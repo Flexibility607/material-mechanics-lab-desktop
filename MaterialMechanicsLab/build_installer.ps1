@@ -20,7 +20,13 @@ $LocalNsis = Join-Path ${env:ProgramFiles(x86)} "NSIS"
 $MakeNsis = Join-Path $LocalNsis "Bin\makensis.exe"
 $ElectronDist = Join-Path $Root "node_modules\electron\dist\electron.exe"
 if (-not (Test-Path $ElectronDist)) {
-    throw "Local Electron runtime not found: $ElectronDist"
+    & $Pnpm exec install-electron
+    if ($LASTEXITCODE -ne 0) {
+        throw "Electron runtime installation failed."
+    }
+}
+if (-not (Test-Path $ElectronDist)) {
+    throw "Local Electron runtime not found after installation: $ElectronDist"
 }
 
 & $Pnpm exec electron-builder --dir --win --x64
