@@ -234,6 +234,24 @@ async function createMainWindow() {
     });
     mainWindow.once("ready-to-show", () => mainWindow.show());
     mainWindow.webContents.setWindowOpenHandler(({ url }) => {
+        if (url === "about:blank") {
+            return {
+                action: "allow",
+                overrideBrowserWindowOptions: {
+                    width: 1120,
+                    height: 860,
+                    minWidth: 760,
+                    minHeight: 560,
+                    title: "实验报告",
+                    autoHideMenuBar: true,
+                    webPreferences: {
+                        contextIsolation: true,
+                        nodeIntegration: false,
+                        sandbox: true
+                    }
+                }
+            };
+        }
         if (!url.startsWith("http://127.0.0.1:")) shell.openExternal(url);
         return { action: "deny" };
     });
