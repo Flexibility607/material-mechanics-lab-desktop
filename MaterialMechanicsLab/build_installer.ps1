@@ -11,7 +11,7 @@ if ($LASTEXITCODE -ne 0) {
     throw "Server build failed."
 }
 
-& $Pnpm install
+& $Pnpm --dir $Root install
 if ($LASTEXITCODE -ne 0) {
     throw "Electron dependency installation failed."
 }
@@ -20,7 +20,7 @@ $LocalNsis = Join-Path ${env:ProgramFiles(x86)} "NSIS"
 $MakeNsis = Join-Path $LocalNsis "Bin\makensis.exe"
 $ElectronDist = Join-Path $Root "node_modules\electron\dist\electron.exe"
 if (-not (Test-Path $ElectronDist)) {
-    & $Pnpm exec install-electron
+    & $Pnpm --dir $Root exec install-electron
     if ($LASTEXITCODE -ne 0) {
         throw "Electron runtime installation failed."
     }
@@ -29,7 +29,7 @@ if (-not (Test-Path $ElectronDist)) {
     throw "Local Electron runtime not found after installation: $ElectronDist"
 }
 
-& $Pnpm exec electron-builder --dir --win --x64
+& $Pnpm --dir $Root exec electron-builder --dir --win --x64
 if ($LASTEXITCODE -ne 0) {
     throw "Electron application packaging failed."
 }
@@ -37,7 +37,7 @@ if ($LASTEXITCODE -ne 0) {
 if (Test-Path $MakeNsis) {
     & $MakeNsis /INPUTCHARSET UTF8 (Join-Path $Root "installer.nsi")
 } else {
-    & $Pnpm exec electron-builder --prepackaged (Join-Path $Root "dist\win-unpacked") --win nsis --x64
+    & $Pnpm --dir $Root exec electron-builder --prepackaged (Join-Path $Root "dist\win-unpacked") --win nsis --x64
 }
 if ($LASTEXITCODE -ne 0) {
     throw "Windows installer build failed."
