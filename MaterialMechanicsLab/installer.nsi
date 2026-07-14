@@ -3,7 +3,7 @@ Unicode true
 !include "MUI2.nsh"
 
 !define PRODUCT_NAME "材料力学实验报告助手"
-!define PRODUCT_VERSION "1.1.0"
+!define PRODUCT_VERSION "1.2.0"
 !define PRODUCT_PUBLISHER "Material Mechanics Lab"
 !define PRODUCT_EXE "材料力学实验报告助手.exe"
 !define PRODUCT_REG_KEY "Software\Microsoft\Windows\CurrentVersion\Uninstall\cn.materialmechanics.lab"
@@ -17,7 +17,7 @@ SetCompressor /SOLID lzma
 ShowInstDetails show
 ShowUninstDetails show
 
-VIProductVersion "1.1.0.0"
+VIProductVersion "1.2.0.0"
 VIAddVersionKey /LANG=2052 "ProductName" "${PRODUCT_NAME}"
 VIAddVersionKey /LANG=2052 "ProductVersion" "${PRODUCT_VERSION}"
 VIAddVersionKey /LANG=2052 "CompanyName" "${PRODUCT_PUBLISHER}"
